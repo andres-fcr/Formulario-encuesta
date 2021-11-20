@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Pizza</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Pizza Colombiana</h1>
+        <p id="description">Bienvenido, si te registras, ganaras una pizza como la prefieras</p>
+    </header>
+    <form id="survey-form">
+        <div>
+            <label id="name-label">Nombre</label>
+            <input type="text" name="name" id="name" placeholder="Nombre" required>
+        </div>
+        <div>
+            <label id="email-label">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="E-mail" required>
+        </div>
+        <div>
+            <label id="number-label">Edad</label>
+            <input type="number" name="number" id="number" placeholder="Edad" min="18" max="150">
+        </div>
+        <div>
+            <select name="genero" id="dropdown">
+                <option value="">Hombre</option>
+                <option value="">Mujer</option>
+                <option value="">Otro</option>
+            </select>
+        </div>
+        <div>
+            <p>Escoje tu sabor favorito</p>
+            <label for="hawaii"><input value="hawaii" id="hawaii" type="radio" name="sabores">Hawaiiana</label>
+            <label for="pollo"><input value="pollo" id="pollo" type="radio" name="sabores">Pollo-Champiñones</label>
+            <label for="carnes"><input value="carnes" id="carnes" type="radio" name="sabores">Carnes</label>
+            <label for="napoli"><input value="napoli" id="napoli" type="radio" name="sabores">Napolitana</label>
+        </div>
+        <div>
+            <p>Escoje hasta 4 opciones extra en tu pizza</p>
+            <label for="queso"><input value="queso" id="queso" type="checkbox" name="top">Queso</label>
+            <label for="salsa"><input value="queso" id="salsa" type="checkbox" name="top">Salsa</label>
+            <label for="mDel"><input value="queso" id="mDel" type="checkbox" name="top">Masa Delgada</label>
+            <label for="mGr"><input value="queso" id="mGr" type="checkbox" name="top">Masa Gruesa</label>
+        </div>
+        <div>
+            <p>Tienes un comentario, o una sugerencia?</p>
+            <textarea name="comentario" placeholder="Escribenos acá..." id="coment" cols="30" rows="8"></textarea>
+        </div>
+        <button id="submit" type="submit">Quiero mi pizza!!</button>
+    </form>
+
+</body>
+
+</html>
